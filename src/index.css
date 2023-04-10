@@ -1,0 +1,30 @@
+@import './assets/css/footer.css';
+@import './assets/css/header.css';
+@import './assets/css/Login.css';
+@import './assets/css/signup.css';
+@import './assets/css/profile.css';
+@import'./assets/css/info.css';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+main{
+  margin-top: 97px;
+}
+.main-conatiner.show-sidebar{
+  width: calc(90% - 400px);
+  margin: 0px !important;
+}
+.main-conatiner{
+
+  margin: 0px !important;
+}

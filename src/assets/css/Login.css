@@ -1,0 +1,80 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-h2 {
+	text-align: center;
+	color: darkblue;
+	
+}
+
+
+.login_form {
+	width: 50%;
+	margin: auto;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.submit_link{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+}
+
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+button:hover {
+	opacity: 0.8;
+}
+
+button:disabled {
+	opacity: .6;
+}
+
+.cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+
+.login_main {
+	padding: 16px;
+}
+
+
+.forgot_psw {
+	float: right;
+	padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+	.psw {
+		display: block;
+		float: none;
+	}
+
+	.cancelbtn {
+		width: 100%;
+	}
+}
