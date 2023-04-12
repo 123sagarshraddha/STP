@@ -1,12 +1,12 @@
 import React from "react";
 
-const Order =()=>{
-    return(
+
+const Address = ()=>{
+    return (
         <>
         
         </>
     );
-
 }
 
-export default Order;
+export default Address;

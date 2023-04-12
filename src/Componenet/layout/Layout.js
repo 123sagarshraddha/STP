@@ -7,15 +7,21 @@ import address from '../../assets/images/address.jpg';
 import contact from '../../assets/images/contact.jpg';
 import invite from '../../assets/images/invite.jpg';
 import logout from '../../assets/images/logout.jpg';
+import payment from '../../assets/images/payment.jpg'
 
 export default function Layout(props) {
 
     const showMenu = () => {
         props.setShowProfile(!props.showProfile)
     }
-  return (
-    <>
-     
+
+    // const logout = () => {
+    //     localStorage.removeItem('token-info');
+    //     setIsLoggedin(false);
+    //   };
+    return (
+        <>
+
             <nav>
                 <img src={logo} className="logo" />
 
@@ -24,62 +30,62 @@ export default function Layout(props) {
                 </ul>
 
                 <img src={img} className="user-pic" onClick={showMenu} />
-             
+
 
             </nav>
-       
-        {props.showProfile && <div className="sub-menu-wrap" >
-                    <div className="sub-menu">
-                        <div className="user-info">
-                            <img src={img} />
-                            <h3>Customer</h3>
-                        </div>
-                        <hr />
 
-                        <Link to='/profile' className="sub-menu-link">
-                            <img src={img} alt="" />
-                            <p>Edit Profile</p>
-                            {/* <span></span> */}</Link>
-
-
-                        <Link to="/history" className="sub-menu-link">
-                            <img src={order} alt="" />
-                            <p>Order History</p>
-                            {/* <span>></span> */}
-                        </Link>
-
-                        <Link to={"/my_address"}
-                            className="sub-menu-link">
-                            <img src={address} alt="" />
-                            <p>My Address</p>
-                            {/* <span>></span> */}
-                        </Link>
-
-
-
-                        <a
-                            className="sub-menu-link">
-                            <img src={invite} alt="" />
-                            <p>Invite Friends</p>
-                            {/* <span>></span> */}
-                        </a>
-
-                        <a
-                            className="sub-menu-link"><Link to=""></Link>
-                            <img src={contact} alt="" />
-                            <p>Contact Us</p>
-                            {/* <span>></span> */}
-                        </a>
-
-                        <a className="sub-menu-link"  ><Link to=''></Link>
-                            <img src={logout} alt="" />
-                            <p>Logout</p>
-                            {/* <span>></span> */}
-                        </a>
-
+            {props.showProfile && <div className="sub-menu-wrap" >
+                <div className="sub-menu">
+                    <div className="user-info">
+                        <img src={img} />
+                        <h3>Customer</h3>
                     </div>
+                    <hr />
+
+                    <Link to='/profile' className="sub-menu-link">
+                        <img src={img} alt="" />
+                        <p>Edit Profile</p>
+                        {/* <span></span> */}
+                    </Link>
+                    <Link to="/payment" className="sub-menu-link">
+                        <img src={payment} alt="" />
+                        <p>Payment</p>
+
+                    </Link>
+
+
+                    <Link to="/history" className="sub-menu-link">
+                        <img src={order} alt="" />
+                        <p>Order History</p>
+
+                    </Link>
+
+                    <Link to={"/address"}
+                        className="sub-menu-link">
+                        <img src={address} alt="" />
+                        <p>My Address</p>
+
+                    </Link>
+
+                    <Link to={"/contact"}
+                        className="sub-menu-link">
+                        <img src={contact} alt="" />
+                        <p>Contact Us</p>
+
+                    </Link>
+
+                    <Link to={'/logout'}
+                        className="sub-menu-link"  >
+                        <img src={logout} alt="" />
+                        <p>Logout</p>
+
+                    </Link>
+
                 </div>
-                }
-    </>
-  )
+            </div>
+            }
+        </>
+    )
 }
+
+

@@ -1,3 +1,4 @@
+
 import React , {useEffect, useState}from 'react';
 
 
@@ -37,7 +38,7 @@ const Profile =()=>{
                 <label htmlFor='email'><b>Email</b></label>
                 <input type='text' name='email' value={user.email} onChange={handaleIputs} placeholder='Enter Email' required/>
 
-                <lable htmlFor='Phone'><b>Phone Number</b></lable>
+                <lable className='lable' htmlFor='Phone'><b>Phone Number</b></lable>
                 <input type='number' name='phnum' value={user.phnum} onChange={handaleIputs} placeholder='Enter  Phone Number' required/>
 
                 <div>

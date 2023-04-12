@@ -8,7 +8,12 @@
   
   .profile_h2{
     text-align: center;
-    color: darkblue;
+    color:#04AA6D;
+  }
+  .lable{
+    margin-bottom: 10px;
+    display: block;
+    color: rgb(71, 67, 67);
   }
   
   input[type=text], input[type=number] {

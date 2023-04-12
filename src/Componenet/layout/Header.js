@@ -28,7 +28,7 @@ const Header = () => {
 
                                 </div>
                                 <div className="join_us">
-                                    <Link style={{ textDecoration: 'none' }} to="/login"> JOIN US</Link>
+                                    <Link style={{ textDecoration: 'none' }} to="/"> JOIN US</Link>
 
                                 </div>
                             </a>
@@ -45,9 +45,9 @@ const Header = () => {
                                         <li>
                                             <Link style={{textDecoration:'none'}} to='/signup'>SignUp</Link>
                                         </li>
-                                        <li>
-                                            <Link style={{textDecoration:'none'}} to='/login'>Login</Link>
-                                        </li>
+                                        {/* <li>
+                                            <Link style={{textDecoration:'none'}} to='/'>Login</Link>
+                                        </li> */}
                                     </ul>
 
                                 </div>

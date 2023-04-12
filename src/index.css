@@ -4,6 +4,8 @@
 @import './assets/css/signup.css';
 @import './assets/css/profile.css';
 @import'./assets/css/info.css';
+@import'./assets/css/payment.css';
+@import './assets/css/contact.css';
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
