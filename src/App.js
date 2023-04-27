@@ -26,9 +26,9 @@ function App() {
               <Routes>
                 <Route path='/profile' element={<Profile />} />
                 <Route path='/payment' element={<Payment />} />
-                <Route path='/history' element={<Order/>}/>
-                <Route path='/address' element={<Address/>}/>
-                <Route path='/contact' element={<Contact/>}/>
+                <Route path='/history' element={<Order />} />
+                <Route path='/address' element={<Address />} />
+                <Route path='/contact' element={<Contact />} />
               </Routes>
             </main>
           </div>
@@ -37,7 +37,7 @@ function App() {
             <Header />
             <main >
               <Routes>
-                 console.log("props", props);
+                console.log("props", props);
                 <Route path='/' element={<Login setIslogin={setIslogin} />}> </Route>
                 <Route path='/signup' element={<Signup />}> </Route>
               </Routes>

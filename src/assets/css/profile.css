@@ -10,10 +10,10 @@
     text-align: center;
     color:#04AA6D;
   }
-  .lable{
+  lable{
     margin-bottom: 10px;
     display: block;
-    color: rgb(71, 67, 67);
+    color: rgb(59, 58, 58);
   }
   
   input[type=text], input[type=number] {
