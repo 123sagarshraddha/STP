@@ -5,7 +5,6 @@ import img from '../../assets/images/img.jpg';
 import order from '../../assets/images/order.jpg';
 import address from '../../assets/images/address.jpg';
 import contact from '../../assets/images/contact.jpg';
-import invite from '../../assets/images/invite.jpg';
 import logout from '../../assets/images/logout.jpg';
 import payment from '../../assets/images/payment.jpg'
 
@@ -15,10 +14,7 @@ export default function Layout(props) {
         props.setShowProfile(!props.showProfile)
     }
 
-    // const logout = () => {
-    //     localStorage.removeItem('token-info');
-    //     setIsLoggedin(false);
-    //   };
+    
     return (
         <>
 
